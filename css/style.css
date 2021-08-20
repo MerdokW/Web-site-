@@ -1,0 +1,286 @@
+/*Включает в себя свойства width и height 
+включают в себя значения padding и border,
+margin не учитывается*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0; /* обнуляем внешние отступы */
+}
+
+html {
+  font-family: "Segoe UI", sans-serif; /* семейство шрифтов */
+  scroll-behavior: smooth; /*плавная прокрутка сайта*/
+}
+
+.container {
+  max-width: 1240px; /* максимальная ширина */
+  margin-left: auto; /* автоматический максимальный отступ слева */
+  margin-right: auto; /* автоматический максимальный отступ справа */
+  padding-left: 20px; /* внутренний отступ слева */
+  padding-right: 20px; /* внутренний отступ справа */
+}
+
+section {
+  padding-top: 40px; /*внутренний отступ сверху*/
+  padding-bottom: 40px; /*внутренний отступ снизу*/
+}
+
+h3 {
+  font-weight: 300; /*насыщенность текста*/
+  font-size: 40px; /*размер текста*/
+  margin: 0; /*внешний отступ равен 0*/
+}
+
+p {
+  font-size: 20px; /*размер текста*/
+  line-height: 1.5; /*междустрочный интервал*/
+}
+
+/* flex */
+/*блочный и выкладывает содержимое согласно флекс-модели*/
+.flex {
+  display: flex;
+}
+/*Флексы выстраиваются в несколько строк, 
+их направление задаётся свойством flex-direction*/
+.wrap {
+  flex-wrap: wrap;
+}
+/*задаем направление осей в контейнере
+вертикально и направлена сверху вниз*/
+.column {
+  flex-direction: column;
+}
+/*Флексы выравниваются по центру строки.*/
+.jc-c {
+  justify-content: center;
+}
+/*Флексы равномерно распределяются по всей строке*/
+.jc-sb {
+  justify-content: space-between;
+}
+/*выравнивает флекс-элементы внутри контейнера 
+в перпендикулярном направлении*/
+.ai-c {
+  align-items: center;
+}
+
+/* /flex */
+
+/* header */
+
+header {
+  background: #fff; /* фон */
+  box-shadow: 0 0 4px #0008; /* тень */
+  position: sticky;
+  width: 100%;
+  top: 0; /*сверху отступ ноль*/
+  left: 0; /*слева отступ ноль*/
+  z-index: 100; /*определяет положение элемента и нижестоящих 
+  элементов по оси z*/
+}
+/*Ссылки в шапке*/
+header a {
+  text-decoration: none; /*Убираем подчеркивание у ссылок в шапке*/
+  color: #000; /* цвет текста */
+}
+
+.header-inner {
+  height: 62px; /* высота элемента */
+}
+
+header h1 {
+  margin: 0; /*отступ равен 0*/
+}
+
+/* /header */
+
+/* hero */
+
+#hero {
+  height: 80vh; /* 80% высоты экрана */
+  text-align: center; /*текст выравнивается по центру*/
+  color: white; /*Цвет будет белый*/
+  /*Фон для секции hero, повторяться не будет*/
+  background: url("../img/scooter-3620869_960_720.jpg") no-repeat;
+  /*масштабирование фона с сохранением пропорций
+  в рамках блока*/
+  background-size: cover;
+}
+/*для заголовка второго уровня в секции hero*/
+#hero h2 {
+  font-weight: 300; /*насыщенность текста*/
+  font-size: 40px; /*размер текста*/
+  margin: 0; /*отступ равен 0*/
+}
+
+.btn {
+  text-decoration: none; /*убираем подчеркивание*/
+  color: #000; /*цвет кнокпи*/
+  background: #fff; /*фон у ссылки*/
+  border: none; /* убираем границы */
+  padding: 8px 20px; /* верхний и нижний отступ 8 пкс, левый и правый - 20 */
+  border-radius: 8px; /* радиус углов элемента */
+  transition: 0.3s ease-in-out; /* плавный переход между состояниями */
+}
+
+.btn:hover,
+.btn:focus {
+  color: #fff; /*задаем цвет*/
+  background: orange; /*задаем фон*/
+  cursor: pointer; /* изменение курсора при наведении на 
+  элемент на указатель */
+}
+
+/* /hero */
+
+#catalog {
+  background: #fbfbfb; /*задаем фон для каталога*/
+}
+
+.catalog-header {
+  margin-bottom: 20px; /*задаем отсут от внешнего края снизу*/
+}
+
+.card-list {
+  display: grid; /*контейнер-сетка grid*/
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px; /*задает расстояние между соседними линиями в grid*/
+}
+
+.card {
+  background: #fff; /*фон для карточки*/
+  box-shadow: 0 0 8px #0003; /*тень*/
+  /*margin-bottom: 20px;*/
+  padding: 20px;
+  position: relative;
+  display: none;
+}
+
+.card-image {
+  width: 100%; /*ширина 100*/
+  aspect-ratio: 1; /*соотношение сторон 1:1*/
+  object-fit: contain; /*масштабируется с соблюдением пропорций*/
+}
+
+.card-title {
+  font-weight: 400; /*насыщенность текста*/
+  font-size: 14px; /*размер текста*/
+}
+
+.card-price {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.card-category {
+  padding: 6px 20px;
+  background: orange;
+  color: white;
+  display: inline-block; /*генерирует блочный элемент*/
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  position: absolute;
+  left: 0;
+}
+
+.category {
+  border-radius: 20px;
+  padding: 2px 8px;
+  transition: 0.3s ease-in-out;
+}
+
+/* после выбранного элемента с id all в последующих элементах div ищем класс category-all */
+#all:checked ~ div .category-all,
+#giro:checked ~ div .category-giro,
+#electro:checked ~ div .category-electro,
+#segway:checked ~ div .category-segway {
+  background: orange;
+  color: #fff;
+}
+
+.category-toggle {
+  display: none;
+}
+
+#all:checked ~ div .card,
+/* после выбранного элемента с id giro в последующих элементах div ищем атрибут data-giro */
+#giro:checked ~ div [data-giro],
+#electro:checked ~ div [data-electro],
+#segway:checked ~ div [data-segway] {
+  display: block;
+}
+
+#useful h3 {
+  margin-bottom: 40px;
+}
+
+.useful-image {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.useful-card {
+  position: relative;
+  text-decoration: none;
+}
+
+.useful-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  text-align: center;
+  font-weight: 700;
+
+  background: #0008;
+  color: #fff;
+
+  padding: 20px;
+
+  display: flex;
+  /*Флексы выравниваются по центру строки.*/
+  justify-content: center;
+  /*выравнивает флекс-элементы внутри контейнера 
+в перпендикулярном направлении*/
+  align-items: center;
+}
+
+footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  background: #fbfbfb;
+  color: #aaa;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+.footer-container {
+  gap: 20px;
+}
+
+.footer-half {
+  width: 50%;
+}
+
+.footer-copyright {
+  margin-top: 40px;
+}
+
+footer h4 {
+  color: #333;
+}
+
+footer a {
+  text-decoration: none;
+  color: #aaa;
+  display: block;
+}

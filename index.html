@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My-Giro</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-inner container flex ai-c jc-sb">
+        <a href="#"><h1>My-Giro</h1></a>
+        <nav>
+          <a href="#">Преимущества</a>
+          <a href="#about">О нас</a>
+          <a href="#">Особенности</a>
+          <a href="#catalog">Каталог</a>
+          <a href="#">Команда</a>
+          <a href="#">Бренды</a>
+          <a href="#use">Полезное</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero" class="flex jc-c ai-c colum">
+        <h2>My-Giro</h2>
+        <p>
+          Крупнейший интернет-магазин гиросскутеров, сигвеев и электросамокатов
+          от известных мировых производителей
+        </p>
+        <a href="#" class="btn">В каталог</a>
+      </section>
+      <section id="about" class="container">
+        <h3>О нас</h3>
+        <p>
+          В нашем интернет-магазине представлен большой выбор гироскутеров,
+          сигвеев и электросамокатов от известных мировых производителей.
+        </p>
+        <p>
+          Все товары, представленные на нашем сайте, отобраны лучшими
+          специалистами в этой области. Купить гироскутер, электросамокат или
+          сигвей недорого, Вы можете в нашем интернет-магазине в любое время,
+          когда Вам удобно. Доставка заказов осуществляется бесплатно, в любую
+          точку России.
+        </p>
+      </section>
+      <section id="catalog">
+        <div class="container">
+          <input
+            type="radio"
+            name="category"
+            id="all"
+            class="category-toggle"
+            checked
+          />
+          <input
+            type="radio"
+            name="category"
+            id="giro"
+            class="category-toggle"
+          />
+          <input
+            type="radio"
+            name="category"
+            id="electro"
+            class="category-toggle"
+          />
+          <input
+            type="radio"
+            name="category"
+            id="segway"
+            class="category-toggle"
+          />
+        </div>
+        <div class="flex ai-c jc-sb catalog-header">
+          <h3>Каталог</h3>
+          <div>
+            <label for="all" class="category category-all">Все</label>
+            <label for="giro" class="category category-giro">Гироскутеры</label>
+            <label for="electro" class="category category-electro"
+              >Электросамокаты</label
+            >
+            <label for="segway" class="category category-segway">Сигвеи</label>
+          </div>
+        </div>
+        <div class="card-list">
+          <div class="card" data-segway="">
+            <div class="card-category">Сигвеи</div>
+            <img src="./img/segway/1.jpg" alt="Сигвеи" class="card-image" />
+            <h4 class="card-title">
+              Сигвей Xiaomi Ninebot mini Pro Black (Черный)
+            </h4>
+            <div class="card-price">31 480 р</div>
+          </div>
+          <div class="card">
+            <div class="card-category">Сигвеи</div>
+            <img src="./img/segway/2.jpg" alt="Сигвеи" class="card-image" />
+            <h4 class="card-title">
+              Сигвей Xiaomi Ninebot mini Pro White (Белый)
+            </h4>
+            <div class="card-price">31 480 р.</div>
+          </div>
+          <div class="card">
+            <div class="card-category">Сигвеи</div>
+            <img src="./img/segway/3.jpg" alt="Сигвеи" class="card-image" />
+            <h4 class="card-title">Сигвей Xiaomi Ninebot mini White (Белый)</h4>
+            <div class="card-price">14 790 р.</div>
+          </div>
+          <div class="card">
+            <div class="card-category">Гироскутеры</div>
+            <img src="./img/giro/1.jpg" alt="Гироскутеры" class="card-image" />
+            <h4 class="card-title">Гироскутер Smart Balance 10 Красный</h4>
+            <div class="card-price">6500 р.</div>
+          </div>
+          <div class="card">
+            <div class="card-category">Гироскутеры</div>
+            <img src="./img/giro/2.jpg" alt="Гироскутеры" class="card-image" />
+            <h4 class="card-title">
+              Гироскутер Smart Balance Premium 10 Цветные Молнии
+            </h4>
+            <div class="card-price">10 990 р.</div>
+          </div>
+          <div class="card">
+            <div class="card-category">Гироскутеры</div>
+            <img src="./img/giro/3.jpg" alt="Гироскутеры" class="card-image" />
+            <h4 class="card-title">
+              Гироскутер Smart Balance SUV Черная Молния 10.5" Premium PRO
+            </h4>
+            <div class="card-price">8 590 р.</div>
+          </div>
+          <div class="card">
+            <div class="card-category">Электросамокаты</div>
+            <img
+              src="./img/electro/1.jpg"
+              alt="Электросамокаты"
+              class="card-image"
+            />
+            <h4 class="card-title">
+              Xiaomi Mijia Electric Scooter m187 Black черный
+            </h4>
+            <div class="card-price">20 480 р.</div>
+          </div>
+          <div class="card">
+            <div class="card-category">Электросамокаты</div>
+            <img
+              src="./img/electro/1.jpg"
+              alt="Электросамокаты"
+              class="card-image"
+            />
+            <h4 class="card-title">Электросамокат KUGOO S4 (8800mAh)</h4>
+            <div class="card-price">13 480 р.</div>
+          </div>
+          <div class="card">
+            <div class="card-category">Электросамокаты</div>
+            <img
+              src="./img/electro/1.jpg"
+              alt="Электросамокаты"
+              class="card-image"
+            />
+            <h4 class="card-title">Электросамокат SUBOR D9</h4>
+            <div class="card-price">11 790 р.</div>
+          </div>
+        </div>
+      </section>
+      <section id="useful">
+        <div>
+          <h3>Полезная информация</h3>
+          <div class="card-list">
+            <a href="#" class="useful-card"
+              ><img
+                src="./img/Полезная информация/1.jpg"
+                alt="#"
+                class="useful-image"
+              />
+              <div class="useful-text">
+                Как выбрать гироскутер? Советы перед покупкой
+              </div></a
+            >
+            <a href="#" class="useful-card"
+              ><img
+                src="./img/Полезная информация/2.jpg"
+                alt="#"
+                class="useful-image"
+              />
+              <div class="useful-text">
+                Электросамокат. Какой лучше и как выбрать?
+              </div></a
+            >
+            <a href="#" class="useful-card"
+              ><img
+                src="./img/Полезная информация/3.jpg"
+                alt="#"
+                class="useful-image"
+              />
+              <div class="useful-text">
+                Как выбрать сигвей? На что обратить внимание?
+              </div></a
+            >
+            <a href="#" class="useful-card"
+              ><img
+                src="./img/Полезная информация/4.jpg"
+                alt="#"
+                class="useful-image"
+              />
+              <div class="useful-text">
+                Советы по выбору гироскутера для ребенка.
+              </div></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container flex foter-container">
+        <div class="foter-half">
+          <p>
+            В нашем интернет-магазине представлен большой выбор гироскутеров,
+            сигвеев и электросамокатов от известных мировых производителей.
+          </p>
+          <p>
+            Все товары, представленные на нашем сайте, отобраны лучшими
+            специалистами в этой области. Купить гироскутер, электросамокат или
+            сигвей недорого, Вы можете в нашем интернет-магазине в любое время,
+            когда Вам удобно. Доставка заказов осуществляется бесплатно, в любую
+            точку России.
+          </p>
+          <div class="foter-copyright">&#169; copyright 2021 My-Giro</div>
+        </div>
+        <div class="foter-half flex js-sb foter-container">
+          <div class="foter-col">
+            <h4>Компания My-Giro</h4>
+            <a href="#">О нас</a>
+            <a href="#">Наши преимущества</a>
+            <a href="#">Наши консультанты</a>
+          </div>
+          <div class="foter-col">
+            <h4>Компания My-Giro</h4>
+            <a href="#">Каталог</a>
+            <a href="#">Бренды</a>
+            <a href="#">Полезная информация</a>
+          </div>
+          <div class="foter-col">
+            <h4>Компания My-Giro</h4>
+            <a href="#">Как оформить заказ</a>
+            <a href="#">Способ оплаты</a>
+            <a href="#">Обмен и возврат товара</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
